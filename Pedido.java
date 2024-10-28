@@ -28,10 +28,6 @@ public int getIdPedido() {
 return idPedido;
 }
 
-    public void setIdPedido(int idPedido) {
-this.idPedido = idPedido;
-}
-
 public Item getItem() {
 return item;
 }
