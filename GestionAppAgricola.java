@@ -412,12 +412,12 @@ break;
 
 if (itemAEliminar == null) {
 System.out.println("Item no encontrado.");
-break; // Salir si no se encuentra el item
+break; //Salir si no se encuentra el item
 }
 
-    // Confirmación antes de eliminar
-System.out.println("Está a punto de eliminar el siguiente producto:");
-System.out.println(itemAEliminar); // Muestra los detalles del item a eliminar
+
+System.out.println("Está a punto de eliminar el siguiente producto:"); //Confirmación antes de eliminar
+System.out.println(itemAEliminar); //Muestra los detalles del item a eliminar
 System.out.print("¿Está seguro que desea eliminarlo? (S/N): ");
 String confirmacion = scanner.nextLine();
 
