@@ -19,14 +19,10 @@ this.productor = productor;
 this.cantidad = cantidad;
 }
 
-    // Getters y Setters
-public int getID() {
+public int getID() { //Getters y Setters
 return ID;
 }
 
-public void setID(int ID) {
-this.ID = ID;
-}
 
 public String getNombreProducto() {
 return nombreProducto;
@@ -60,10 +56,6 @@ public Usuario getProductor() {
 return productor;
 }
 
-public void setProductor(Usuario productor) {
-this.productor = productor;
-}
-
 public int getCantidad() {
 return cantidad;
 }
@@ -79,12 +71,12 @@ System.out.println("La cantidad no puede ser negativa"); //Para asegurar que la 
  
 @Override
 public String toString() {  //Para representar el objeto como texto
-        return "Item ID = " + ID + '\'' +
-                "\nNombre del Producto = '" + nombreProducto + '\'' +
-                "\nDescripción = '" + descripcion + '\'' +
-                "\nPrecio = " + precio + '\'' +
-                "\nProductor = " + productor.getNombre() + '\'' +
-                "\nCantidad = " + cantidad;
-    }
+return "Item ID = " + ID + '\'' +
+"\nNombre del Producto = '" + nombreProducto + '\'' +
+"\nDescripción = '" + descripcion + '\'' +
+"\nPrecio = " + precio + '\'' +
+"\nProductor = " + productor.getNombre() + '\'' +
+"\nCantidad = " + cantidad;
+}
 }
 
