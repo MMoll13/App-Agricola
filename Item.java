@@ -2,30 +2,34 @@ package gestionAppAgricola;
 
 public class Item {
 
-private int ID;
+private int idItem;
 private String nombreProducto;
 private String descripcion;
 private float precio;
-private Usuario productor;
+private Usuario id;
 private int cantidad;
 
 
-public Item(int ID, String nombreProducto, String descripcion, float precio, Usuario productor, int cantidad) {
-this.ID = ID;
+public  Item(int idItem, String nombreProducto, String descripcion, float precio, Usuario id, int cantidad) {
+this.idItem = idItem;
 this.nombreProducto = nombreProducto;
 this.descripcion = descripcion;
 this.precio = precio;
-this.productor = productor;
 this.cantidad = cantidad;
 }
 
-public int getID() { //Getters y Setters
-return ID;
+ // Getters y Setters
+
+public void setIdItem (int idItem) {this.idItem = idItem;}
+
+ public int getID() {
+    return idItem;
 }
 
 
 public String getNombreProducto() {
-return nombreProducto;
+
+    return nombreProducto;
 }
 
 public void setNombreProducto(String nombreProducto) {
@@ -53,7 +57,7 @@ System.out.println("El precio no puede ser negativo"); //Para asegurar que el pr
 }
 
 public Usuario getProductor() {
-return productor;
+return id;
 }
 
 public int getCantidad() {
@@ -71,12 +75,12 @@ System.out.println("La cantidad no puede ser negativa"); //Para asegurar que la 
  
 @Override
 public String toString() {  //Para representar el objeto como texto
-return "Item ID = " + ID + '\'' +
-"\nNombre del Producto = '" + nombreProducto + '\'' +
-"\nDescripción = '" + descripcion + '\'' +
-"\nPrecio = " + precio + '\'' +
-"\nProductor = " + productor.getNombre() + '\'' +
-"\nCantidad = " + cantidad;
-}
+        return "Item ID = " + idItem + '\'' +
+                "\nNombre del Producto = '" + nombreProducto + '\'' +
+                "\nDescripción = '" + descripcion + '\'' +
+                "\nPrecio = " + precio + '\'' +
+                "\nProductor = " + id.getNombre() + '\'' +
+                "\nCantidad = " + cantidad;
+    }
 }
 
