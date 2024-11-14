@@ -11,7 +11,7 @@ telefono VARCHAR(35),
 email VARCHAR(35)
 );
 
-INSERT INTO Usuario (id, apellido, nombre, documento, telefono, email) VALUES (1, 'MOLL', 'MATIAS', 39843765, '154629363', 'mollm96@gmail.com');
+INSERT INTO Usuario (id, apellido, nombre, documento, telefono, email) VALUES (1, 'PANCHO', 'JUAN', 38732654, '154626633', 'jpbocaj@gmail.com');
 INSERT INTO Usuario (id, apellido, nombre, documento, telefono, email) VALUES (2, 'MARADONA', 'DIEGO', 14276579, '154002211', 'lamanoded10s@gmail.com');
 INSERT INTO Usuario (id, apellido, nombre, documento, telefono, email) VALUES (3, 'MESSI', 'LIONEL', 33016244, '154112233', 'el10deARG@gmail.com');
 INSERT INTO Usuario (id, apellido, nombre, documento, telefono, email) VALUES (4, 'DI MARIA', 'ANGEL', 34099721, '154223311', 'fideoArg@gmail.com');
